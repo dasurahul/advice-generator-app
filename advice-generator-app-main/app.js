@@ -3,7 +3,9 @@ let advice = document.querySelector(".card__text span");
 let button = document.querySelector(".card img");
 
 const getAdvice = () => {
-  fetch("https://api.adviceslip.com/advice")
+  fetch("https://api.adviceslip.com/advice", {
+    cache: "no-cache",
+  })
     .then((response) => response.json())
     .then((data) => {
       id.innerHTML = data.slip.id;
