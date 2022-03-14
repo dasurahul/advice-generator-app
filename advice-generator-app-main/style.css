@@ -27,6 +27,7 @@ body {
 .card {
   width: 90%;
   max-width: 500px;
+  margin-inline: auto;
   padding: 40px;
   border-radius: 10px;
   background-color: var(--dark-grayish-blue);
