@@ -32,6 +32,8 @@ body {
   border-radius: 10px;
   background-color: var(--dark-grayish-blue);
   position: relative;
+  animation-name: myAnimation;
+  animation-duration: 0.5s;
 }
 
 .card__title {
@@ -76,4 +78,15 @@ body {
   transform: translate(-50%, 50%);
   background-color: var(--neon-green);
   cursor: pointer;
+}
+
+@keyframes myAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
